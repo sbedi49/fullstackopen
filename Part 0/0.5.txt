@@ -1,0 +1,12 @@
+On Page Load:
+browser->server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/spa
+server->browser: HTML code
+browser->server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/main.css
+server->browser: main.css
+browser->server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/spa.js
+server->browser: spa.js
+**browser execuste js code from spa.js and requests json.data from server
+browser->server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: array of objects containing note content and note date for display
+
+

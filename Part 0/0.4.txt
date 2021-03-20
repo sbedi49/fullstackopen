@@ -1,0 +1,19 @@
+On Page Load:
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+browser executes js code and requests JSON data from the server
+
+When a note is submitted:
+browser->server: user input
+browser->server: POST request to new_note server address
+server->browser:URL redirect to address defined in header's location
+browser reloads Notes page causing 3 GET requests: main.css, main.js, data.json
+
+
+
+
+

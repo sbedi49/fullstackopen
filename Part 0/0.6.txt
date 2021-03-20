@@ -1,0 +1,7 @@
+On Note Submit:
+browser->server: HTTP GET request https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+**POST request to the address (new_note_spa) containes the new note as JSON data
+**Server parses JSON data
+**On JS backend the event handler on form submit prevents default reloading of the page
+** Note list is rerendered and new note is sent to server
+server->browser: Creates status code 201
